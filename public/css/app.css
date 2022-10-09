@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.image-icone {
+  width: 35px;
+  height: 35px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 0 10%;
+}
+.header a {
+  text-decoration: none;
+}
+
+.container-gestion {
+  width: 80%;
+  margin: 10px 10%;
+}
+.container-gestion .card {
+  width: 49%;
+  background-color: blue;
+  height: 130px;
+  border-radius: 20px;
+}
+.container-gestion .card:last-child {
+  margin-top: 7px;
+}
+.container-gestion .gestion-agent,
+.container-gestion .gestion-feeder {
+  display: inline-block;
+  vertical-align: top;
+}
+.container-gestion .gestion-rapport {
+  width: 100%;
+}
+.container-gestion .gestion-agent {
+  background-color: rgb(243, 43, 200);
+}
+.container-gestion .person {
+  margin: 10px 10px;
+}
+.container-gestion .title {
+  margin: 0 5px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  padding: 0 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  text-overflow: clip;
+}
+.container-gestion .gestion-feeder {
+  background-color: rgb(109, 31, 235);
+}
+.container-gestion .gestion-rapport {
+  background-color: rgb(15, 228, 97);
+}
+

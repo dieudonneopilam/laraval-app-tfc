@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.image-icone{
+    width: 35px;
+    height: 35px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 0 10%;
+    background-color: aliceblue;
+    a{
+        text-decoration: none;
+    }
+}
+.container-gestion{
+    width:80%;
+    margin: 10px 10%;
+    .card{
+        width: 49%;
+        background-color: blue;
+        height: 130px;
+        border-radius: 20px;
+    }
+    .card:last-child{
+        margin-top: 7px;
+    }
+    .gestion-agent,
+    .gestion-feeder{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .gestion-rapport{
+        width: 100%;
+    }
+    .gestion-agent{
+        background-color: rgb(243, 43, 200);
+    }
+    .person{
+        margin: 10px 10px;
+    }
+    .title{
+        margin: 0 5px ;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        padding: 0 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90%;
+        text-overflow: clip;
+    }
+    .gestion-feeder{
+        background-color: rgb(109, 31, 235);
+    }
+    .gestion-rapport{
+        background-color: rgb(15, 228, 97);
+    }
+}
+

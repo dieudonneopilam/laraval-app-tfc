@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('home');
+Route::get('/login', function () {
+    return view('pages.login');
+})->name('login');
+Route::get('/agents', function () {
+    return view('pages.agents');
+})->name('agents');
+Route::get('/add-agent', function () {
+    return view('pages.add_agent');
+})->name('add-agent');

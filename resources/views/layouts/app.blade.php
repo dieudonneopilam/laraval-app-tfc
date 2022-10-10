@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><h1>SNel</h1></a>
-        <nav class="nav">
-            <a href="#"><img class="image-icone" src="{{ asset('img/logout.png') }}" alt=""></a>
-        </nav>
-    </header>
+    @if(! Route::is('login'))
+        <header class="header">
+            <a href="#" class="logo"><h1>SNel</h1></a>
+            <nav class="nav">
+                <a href="{{ route('login') }}"><img class="image-icone" src="{{ asset('img/logout.png') }}" alt=""></a>
+            </nav>
+        </header>
+    @endif
     @yield('main')
 </body>
 </html>

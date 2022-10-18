@@ -19,59 +19,10 @@
                 </div>
                 <div class="title-agent">
                     <h1 class="text-name">Dieudonné opilam</h1>
-                    <div class="f-btn">
-                        <p class="text-feeder-name">feederA deka rer de</p>
-                        <a href=""><img class="option-icone" src="{{ asset('img/share.png') }}" alt=""></a>
-                    </div>
+                    <p class="mail-agent">dieudonneopilam2@gmail.com</p>
+                    <h2 class="name-feeder">Feeder Name</h2>
                 </div>
-            </div>
-            <div class="card-agent">
-                <div class="div-img-agent">
-                    <img src="{{ asset('img/gustave.jpg') }}" alt="">
-                </div>
-                <div class="title-agent">
-                    <h1 class="text-name">Dieudonné opilam</h1>
-                    <div class="f-btn">
-                        <p class="text-feeder-name">feederA deka rer de</p>
-                        <a href=""><img class="option-icone" src="{{ asset('img/share.png') }}" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-agent">
-                <div class="div-img-agent">
-                    <img src="{{ asset('img/gustave.jpg') }}" alt="">
-                </div>
-                <div class="title-agent">
-                    <h1 class="text-name">Dieudonné opilam</h1>
-                    <div class="f-btn">
-                        <p class="text-feeder-name">feederA deka rer de</p>
-                        <a href=""><img class="option-icone" src="{{ asset('img/share.png') }}" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-agent">
-                <div class="div-img-agent">
-                    <img src="{{ asset('img/gustave.jpg') }}" alt="">
-                </div>
-                <div class="title-agent">
-                    <h1 class="text-name">Dieudonné opilam</h1>
-                    <div class="f-btn">
-                        <p class="text-feeder-name">feederA deka rer de</p>
-                        <a href=""><img class="option-icone" src="{{ asset('img/share.png') }}" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-agent">
-                <div class="div-img-agent">
-                    <img src="{{ asset('img/gustave.jpg') }}" alt="">
-                </div>
-                <div class="title-agent">
-                    <h1 class="text-name">Dieudonné opilam</h1>
-                    <div class="f-btn">
-                        <p class="text-feeder-name">feederA deka rer de</p>
-                        <a href=""><img class="option-icone" src="{{ asset('img/share.png') }}" alt=""></a>
-                    </div>
-                </div>
+                <img class="option-icone image-icone" src="{{ asset('img/menup.png') }}" alt="">
             </div>
         </div>
     </div>

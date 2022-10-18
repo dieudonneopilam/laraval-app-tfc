@@ -3,7 +3,7 @@
     <div class="add-agent-main">
         <div class="div-img">
             <a href="{{ route('agents') }}"><img class="image-icone" src="{{ asset('img/retour.png') }}" alt=""></a>
-            <h2 class="title">ajouter un agent</h2>
+            <h2 class="title">Modifier un agent</h2>
         </div>
         <form action="">
             <div class="group-form">

@@ -1,0 +1,17 @@
+{
+    "name": "Snel App",
+    "short_name": "SNEL",
+    "start_url": "/index.php",
+    "background_color": "#6777ef",
+    "description": "Snel",
+    "display": "fullscreen",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "img/snel.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

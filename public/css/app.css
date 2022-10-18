@@ -1,14 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Regular.ttf") format("opentype");
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
   font-size: 20px;
 }
 
 body {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(255, 255, 255);
+  font-family: "Robo";
 }
 
 a {
   text-decoration: none;
+}
+
+label {
+  opacity: 0.7;
 }
 
 .image-icone {
@@ -18,28 +28,36 @@ a {
 
 .header {
   display: flex;
+  box-shadow: 1px 1px 3px rgb(206, 205, 205);
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
-  width: 80%;
-  margin: 0 10%;
+  width: 100%;
+  padding: 0 5%;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
 }
 .header a {
   text-decoration: none;
 }
 
 .container-gestion {
-  width: 80%;
-  margin: 10px 10%;
+  width: 90%;
+  margin: 10px 5%;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .container-gestion .card {
   width: 48%;
-  background-color: blue;
-  height: 130px;
+  height: 140px;
   border-radius: 20px;
 }
-.container-gestion .card:last-child {
-  margin-top: 7px;
+.container-gestion .card {
+  margin: 5px 0;
 }
 .container-gestion .gestion-agent,
 .container-gestion .gestion-feeder {
@@ -47,12 +65,22 @@ a {
   vertical-align: top;
 }
 .container-gestion .gestion-rapport {
-  width: 97%;
+  width: 100%;
 }
 .container-gestion .gestion-agent {
-  transition: 0.5s;
-  animation: gestionAgent 5s;
-  background-color: rgb(243, 43, 200);
+  transition: 0.2s;
+  animation: gestionAgent 2s;
+  background-color: rgb(47, 86, 212);
+}
+.container-gestion .gestion-horaire {
+  transition: 0.2s;
+  animation: gestionAgent 2s;
+  background-color: rgb(230, 181, 46);
+}
+.container-gestion .gestion-programme {
+  transition: 0.2s;
+  animation: gestionAgent 2s;
+  background-color: rgb(64, 122, 184);
 }
 .container-gestion .person {
   margin: 10px 10px;
@@ -69,14 +97,14 @@ a {
 }
 .container-gestion .gestion-feeder {
   background-color: rgb(109, 31, 235);
-  animation: gestionFeeder 5s;
-  transition: 0.5s;
+  animation: gestionFeeder 2s;
+  transition: 0.2s;
 }
 .container-gestion .gestion-rapport {
   display: block;
-  background-color: rgb(15, 228, 97);
-  animation: gestionRapport 5s;
-  transition: 0.5s;
+  background-color: rgb(23, 149, 180);
+  animation: gestionRapport 2s;
+  transition: 0.2s;
 }
 @keyframes gestionAgent {
   from {
@@ -159,6 +187,7 @@ a {
   transition: 0.1s;
   width: 80%;
   margin: 0 10%;
+  margin-top: 70px;
 }
 .m-agent .header-agents {
   width: 100%;
@@ -168,7 +197,7 @@ a {
   width: 100%;
   border: 1px solid rgb(214, 214, 214);
   height: 35px;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0 10px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -177,14 +206,42 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.m-agent .options {
+  transform: translate(0%, -200%);
+  border-radius: 5px;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 5px;
+  margin: 5px 85%;
+  text-align: right;
+}
+.m-agent .options .image-icone {
+  height: 16px;
+  width: 16px;
+}
+.m-agent .options li {
+  width: 100%;
+}
+.m-agent .options a {
+  font-size: 14px;
+}
+.m-agent .options ul {
+  list-style-type: none;
+  padding: 0;
+}
+.m-agent .options li {
+  list-style-type: none;
+}
 .m-agent .container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .m-agent .card-agent {
-  width: 48%;
-  height: 150px;
+  position: relative;
+  width: 100%;
+  height: 300px;
   margin: 2px 1px;
   background-color: white;
   box-shadow: 1px 1px 10px rgb(199, 199, 199);
@@ -194,33 +251,51 @@ a {
   border-top-left-radius: 10px;
 }
 .m-agent .option-icone {
+  position: absolute;
+  bottom: 10%;
+  right: 5px;
+}
+.m-agent .option-icone {
   height: 20px;
   width: 20px;
   margin-right: 2px;
+  transform: translateY(100%);
 }
 .m-agent .f-btn {
   display: flex;
   justify-content: space-between;
   margin: 0 2px;
 }
+.m-agent .menu-agent {
+  display: none;
+  background-color: red;
+  margin: 90px;
+}
 .m-agent .div-img-agent {
   background-color: rgb(66, 167, 214);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 40%;
+  height: 50%;
 }
 .m-agent .div-img-agent img {
+  top: 40%;
+  left: 5%;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.m-agent .div-img-feeder {
+  background-color: rgb(168, 21, 182);
+}
+.m-agent .div-img-feeder img {
   position: relative;
   top: 40%;
   left: 5%;
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  transition: transform 0.5s cubic-bezier(0.94, 0.03, 0.14, 0.97);
-}
-.m-agent .div-img-agent img:hover {
-  transform-origin: bottom left;
-  transform: scale(1.3) rotate(10deg);
+  transition: transform 0.2s cubic-bezier(0.94, 0.03, 0.14, 0.97);
 }
 @keyframes slidedown {
   0% {
@@ -236,28 +311,176 @@ a {
   padding-left: 5px;
 }
 .m-agent .title-agent .text-name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: rgb(36, 32, 32);
   display: block;
   margin-top: 14px;
 }
-.m-agent .title-agent .text-feeder-name {
-  font-size: 14px;
+.m-agent .title-agent .mail-agent {
+  font-family: "Inter", sans-serif;
+  font-size: small;
+  color: gray;
+}
+.m-agent .title-agent .name-feeder {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
   margin: 0;
-  position: relative;
   bottom: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ans-serif;
   color: rgb(32, 32, 32);
+}
+
+.add-agent-main {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10%;
+  margin-top: 70px;
+}
+.add-agent-main .label-form {
+  display: block;
+  width: 100%;
+  transform: translate(4%, 120%);
+  font-size: medium;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.add-agent-main .title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.add-agent-main .div-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.add-agent-main form {
+  width: 100%;
+}
+.add-agent-main .input-form-check {
+  margin-top: 20px;
+  display: block;
+  height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid grey;
+  padding: 5px;
+  transition: 0.2S;
+}
+.add-agent-main .input-form {
+  display: block;
+  height: 50px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid grey;
+  padding: 5px 10px 0;
+  transition: 0.2S;
+}
+.add-agent-main .input-form:focus {
+  padding-bottom: -10px;
+  font-size: medium;
+  padding-top: 20px;
+}
+.add-agent-main .group-form-btn {
+  margin: 20px 0;
+}
+.add-agent-main .group-form-btn .btn-submit {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(101, 52, 235);
+  border: 1px solid rgb(101, 52, 235);
+}
+
+.m-programme {
+  width: 100%;
+  margin: 0%;
+  margin-top: 70px;
+}
+.m-programme .header-programmes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.m-programme .div-retour-add-programme {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.m-programme form {
+  width: 100%;
+}
+.m-programme .group-form {
+  width: 100%;
+}
+.m-programme .input-search {
+  width: 100%;
+  height: 40Px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.m-programme .container {
+  width: 100%;
+  overflow-x: scroll;
+}
+.m-programme .table {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.m-programme .table td {
+  background-color: white;
+  text-align: center;
+}
+.m-programme .table tr {
+  border: 1px solid black;
+}
+.m-programme .table th {
+  font-size: 16px;
+  background-color: rgb(247, 247, 247);
+  margin: 0;
+  font-family: sans-serif;
+}
+.m-programme .image-icone {
+  height: 20px;
+  width: 20px;
+}
+.m-programme .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.m-programme .action {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4px;
+  align-items: center;
 }
 
 @media screen and (min-width: 700px) {
   .header {
-    width: 60%;
-    margin: 0 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 20%;
   }
   .container-gestion {
-    width: 40%;
-    margin: 10px 30%;
+    width: 60%;
+    margin: 10px 20%;
+    margin-top: 70px;
   }
   .login-main {
     width: 50%;
@@ -273,7 +496,7 @@ a {
   }
   .m-agent .container {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .m-agent .card-agent {
@@ -302,6 +525,33 @@ a {
     width: 70px;
     height: 70px;
     border-radius: 70px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .add-agent-main {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 20%;
+  }
+  .add-agent-main .title {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .add-agent-main form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .add-agent-main form .group-form {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .m-programme {
+    width: 60%;
+    margin: 0 20%;
   }
 }
 

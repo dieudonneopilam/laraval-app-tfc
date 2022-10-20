@@ -31,7 +31,7 @@ label {
   box-shadow: 1px 1px 3px rgb(206, 205, 205);
   align-items: center;
   justify-content: space-between;
-  align-content: space-between;
+  align-content: center;
   width: 100%;
   padding: 0 5%;
   position: fixed;
@@ -139,47 +139,67 @@ label {
 
 .login-main {
   margin: 20px 0;
+  width: 100%;
   padding: 0 10%;
 }
 .login-main .input-form {
   display: block;
   height: 40px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: beige;
   text-decoration: none;
   padding: 0 15px;
-  border: 1px solid rgb(104, 104, 104);
-  font-size: 16px;
+  border: 0.2px solid rgb(104, 104, 104);
+  font-size: 14px;
+  font-style: italic;
 }
 .login-main .logo-img {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-top: 30%;
+}
+.login-main .logo-img .login {
+  font-family: cursive;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  height: 0px;
+}
+.login-main .logo-img .image-icone {
+  justify-items: baseline;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
 }
 .login-main .group-form {
-  margin: 20px 0;
+  margin: 5px 0;
 }
 .login-main .label-form {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  font-family: system-ui;
   margin-bottom: 5px;
 }
 .login-main .btn-group {
   display: flex;
   justify-content: right;
+  margin-top: 10px;
 }
 .login-main .btn-group .btn {
-  background-color: rgb(42, 92, 255);
+  background-color: rgba(27, 58, 161, 0.842);
   height: 50px;
-  width: 100px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-color: rgba(42, 92, 255, 0.842);
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 30px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid rgba(27, 58, 161, 0.842);
+  border-radius: 5px;
   color: white;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  font-size: 22px;
 }
 
 .m-agent {
@@ -332,11 +352,11 @@ label {
 }
 
 .add-agent-main {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 10%;
+  margin: 0 5%;
   margin-top: 70px;
 }
 .add-agent-main .label-form {
